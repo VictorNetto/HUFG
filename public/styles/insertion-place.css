@@ -1,0 +1,222 @@
+.insertion-place a {
+    width: 20px;
+    height: 20px;
+
+    margin: 5px;
+
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    background-color: #0c65a9;
+    color: white;
+}
+
+.insertion-place a:hover {
+    background-color: #333366;
+    cursor: pointer;
+}
+
+.insertion-place .addble {
+    line-height: 22px;
+}
+
+.insertion-place .removable {
+    line-height: 17px;
+}
+
+.removable {
+    /* margin: 2px 2px 0; */
+    padding: 4px;
+
+    background-color: white;
+
+    border-right: 3px solid #0C65A9;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .removable:hover {
+    border-right: 5px solid #0C65A9;
+    background-color: #f0f0f0;
+} */
+
+.removable.hovering {
+    border-right: 5px solid #0C65A9;
+    background-color: #f0f0f0;
+}
+
+.removable .name {
+    width: 60%;
+    line-height: 20px;
+
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: #555555;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.removable .schedule {
+    color: #555555;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-align: right;
+}
+
+.addble {
+    margin-top: 10px;
+    padding: 4px;
+
+    height: 55px;
+    width: 90%;
+
+    float: right;
+
+    right: 0;
+
+    background-color: white;
+
+    border-right: 3px solid #0C65A9;
+    border-bottom: 1px solid #0C65A9;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.addble #new-name {
+    border: 0;
+    border-bottom: 1px solid #333333;
+
+    text-align: center;
+
+    color: #333333;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+
+    width: 55%;
+    height: 40px;
+}
+
+.addble #new-name:focus {
+    outline: none;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #333333;
+}
+
+.addble #new-name:hover {
+    background-color: #f5f5f5;
+}
+
+.addble #new-schedule {
+    border: 0;
+    border-bottom: 1px solid #555555;
+
+    text-align: center;
+
+    color: #555555;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    width: 25%;
+    height: 40px;
+}
+
+.addble #new-schedule:focus {
+    outline: none;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #555555;
+}
+
+.addble #new-schedule:hover {
+    background-color: #f5f5f5;
+}
+
+#error-msg {
+    margin-top: 10px;
+    padding-left: 5px;
+    border-radius: 8px;
+
+    width: 60%;
+    float: right;
+
+    font-size: 10px;
+    font-weight: normal;
+
+    background-color: #ffdddd;
+    color: red;
+
+    transition: 500ms;
+}
+
+.insertion-place .buttons {
+    display: flex;
+}
+
+.insertion-place .buttons a {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 2px 6px;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+
+    border-radius: 0;
+    border-right: 1px dashed white;
+}
+
+.insertion-place button {
+    width: 100%;
+    padding: 2px;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+
+    color: white;
+    background-color: #0C65A9;
+
+    outline: none;
+    border: 0;
+}
+
+.insertion-place button:hover {
+    background-color: #333366;
+    cursor: pointer;
+}
+
+.insertion-place .buttons a:hover {
+    cursor: default;
+}
+
+.insertion-place .disabled {
+    background-color: #ccccff;
+}
+
+.insertion-place .disabled:hover {
+    background-color: #ccccff;
+    cursor: not-allowed;
+}

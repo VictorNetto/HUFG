@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>[H]UFG</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/insertion-place.css">
+    <link rel="stylesheet" href="/styles/display.css">
+</head>
+<body>
+
+    <div class="content">
+    
+        <div class="insertion-place">
+            <form action="/salvando" method="POST">
+                <div class="buttons">
+                    <a href="#" class="help">?</a>
+                    <button id="save" class="disabled" disabled="disabled">SALVAR</button>
+                    <input type="hidden" name="data">
+                </div>
+            </form>
+
+            <div id="added">
+                <!-- <div class="removable">
+                    <h2 class="name">Metodologia Científica</h2>
+                    <h2 class="schedule">23456N34</h2>
+                    <a href="#">-</a>
+                </div> -->
+            </div>
+
+            <div id="error-msg">
+            </div>
+
+            <div class="addble">
+                <input type="text" id="new-name" placeholder="Matéria">
+                <input type="text" id="new-schedule" placeholder="Horário">
+                <a href="#">+</a>
+            </div>
+        </div>
+
+        <div class="display">
+            <div id="left-panel">
+                <div class="top-panel">
+                    <h1>Horários</h1>
+                </div>
+                <div class="bottom-panel">
+                    <div class="work-time">
+                        <h1>08:00 - 08:50</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>08:50 - 09:40</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>10:00 - 10:50</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>10:50 - 11:40</h1>
+                    </div>
+
+                    <div class="rest-time">
+                    </div>
+
+                    <div class="work-time">
+                        <h1>14:00 - 14:50</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>14:50 - 15:40</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>16:00 - 16:50</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>16:50 - 17:40</h1>
+                    </div>
+
+                    <div class="rest-time">
+                    </div>
+
+                    <div class="work-time">
+                        <h1>18:50 - 19:35</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>19:35 - 20:20</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>20:30 - 21:15</h1>
+                    </div>
+                    <div class="work-time">
+                        <h1>21:15 - 22:00</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="right-panel">
+                <div class="top-panel">
+                    <div class="day">
+                        <h1>Seg</h1>
+                    </div>
+                    <div class="day">
+                        <h1>Ter</h1>
+                    </div>
+                    <div class="day">
+                        <h1>Qua</h1>
+                    </div>
+                    <div class="day">
+                        <h1>Qui</h1>
+                    </div>
+                    <div class="day">
+                        <h1>Sex</h1>
+                    </div>
+                    <div class="day">
+                        <h1>Sab</h1>
+                    </div>
+                </div>
+                <div class="bottom-panel">
+                    <div id="day-2" class="week-day">
+                    </div>
+                    <div id="day-3" class="week-day">
+                    </div>
+                    <div id="day-4" class="week-day">
+                    </div>
+                    <div id="day-5" class="week-day">
+                    </div>
+                    <div id="day-6" class="week-day">
+                    </div>
+                    <div id="day-7" class="week-day">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script>const dataRequestUrl = "{{ dataRequestUrl }}" </script>
+    <script type="module" src="/scripts/main.js"></script>
+
+</body>
+</html>
